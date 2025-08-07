@@ -1,0 +1,19 @@
+Web Scraper for News Headlines:
+
+Objective:
+
+This script scrapes the top news headlines from a public news website using Python. 
+It automates the process of collecting current headlines and saves them into a text file.
+
+Tools Used:
+
+ requests: To fetch the HTML content of the webpage.
+ BeautifulSoup (from bs4): To parse and extract specific elements (e.g., <h1>, <h2>, <h3> tags) from the HTML.
+
+Steps Performed:
+
+1. The script sends a GET request to the BBC News homepage.
+2. It uses BeautifulSoup to parse the returned HTML content.
+3. It searches for all <h1>, <h2>, and <h3> tags that typically contain headlines.
+4. It extracts the text from these tags, avoids duplicates, and stores them in a list.
+5. Finally, it writes all the collected headlines to a file called 'headlines.txt'.
